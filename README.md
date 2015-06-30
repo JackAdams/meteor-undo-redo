@@ -73,4 +73,4 @@ __Also note:__ This is all "last write wins". No Operational Transform going on 
 
 #### Full documentation
 
-Full documentation is available at https://github.com/JackAdams/meteor-transactions2.  We __strongly__ recommend reading through this before attempting to use this package.  All the security info is there.
+Full documentation about `babrahams:transactions2` is available at https://github.com/JackAdams/meteor-transactions2.  We __strongly__ recommend reading through this before attempting to use this package.  All the security info is there.
