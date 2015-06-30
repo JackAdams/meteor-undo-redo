@@ -8,11 +8,21 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.use('babrahams:transactions@0.7.0');
-  api.addFiles('/lib/undo_redo_client.css');
-  api.addFiles('/lib/undo_redo_client.html');
-  api.addFiles('/lib/undo_redo_client.js');
-  api.addFiles('/lib/undo_redo_server.js');
+  api.use('jquery', 'client');
+  api.use('tracker', 'client');
+  api.use('minimongo', 'client');
+  api.use('templating', 'client');
+  api.use('spacebars', 'client');
+  api.use('underscore');
+  api.use('mongo');
+  api.imply('mongo');
+  api.use('accounts-base');
+  api.use('babrahams:transactions2@0.7.0');
+  api.imply('babrahams:transactions2');
+  api.addFiles('lib/undo_redo_client.css','client');
+  api.addFiles('lib/undo_redo_client.html','client');
+  api.addFiles('lib/undo_redo_client.js','client');
+  api.addFiles('lib/undo_redo_server.js','server');
 });
 
 Package.onTest(function(api) {
