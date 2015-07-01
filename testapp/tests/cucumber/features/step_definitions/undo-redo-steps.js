@@ -11,10 +11,10 @@
 	  this.server.call('reset').then(callback);
 	});
 
-    // You can use normal require here, cucumber is NOT run in a Meteor context (by design)
-    var url = require('url');
+// You can use normal require here, cucumber is NOT run in a Meteor context (by design)
+var url = require('url');
 
-    this.Given(/^an action has already been performed called "([^"]*)"$/, function (action, callback) {
+this.Given(/^an action has already been performed called "([^"]*)"$/, function (action, callback) {
 	  // Write code here that turns the phrase above into concrete actions
 	  // Can't see anything from the first action
 	  // Check that it's in the client db
@@ -32,7 +32,7 @@
 	  waitForVisible('body *').
 	  waitForExist('.undo-redo-action', 100).
 	  getText('button#undo-button span.undo-redo-action').then(function (description) {
-	    assert.equal(description, action); 
+	assert.equal(description, action); 
 	  }).
 	  call(callback);
 	});
@@ -48,7 +48,7 @@
 	  // Write code here that turns the phrase above into concrete actions
 	  this.client.
 	  getText('button#undo-button span.undo-redo-action').then(function (description) {
-	    assert.equal(description, action); 
+	assert.equal(description, action); 
 	  }).
 	  call(callback);
 	});
