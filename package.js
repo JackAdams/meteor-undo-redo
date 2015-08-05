@@ -17,7 +17,7 @@ Package.onUse(function(api) {
   api.use('mongo');
   api.imply('mongo');
   api.use('accounts-base');
-  api.use('babrahams:transactions@0.7.0');
+  api.use('babrahams:transactions@0.7.1');
   api.imply('babrahams:transactions');
   api.addFiles('lib/undo_redo_client.css','client');
   api.addFiles('lib/undo_redo_client.html','client');
