@@ -1,6 +1,6 @@
 Package.describe({
   name: 'babrahams:undo-redo',
-  version: '0.3.0',
+  version: '0.3.1',
   summary: 'Undo-redo widget for babrahams:transactions',
   git: 'https://github.com/JackAdams/meteor-undo-redo.git',
   documentation: 'README.md'
@@ -17,7 +17,7 @@ Package.onUse(function(api) {
   api.use('mongo');
   api.imply('mongo');
   api.use('accounts-base');
-  api.use('babrahams:transactions@0.8.0');
+  api.use('babrahams:transactions@0.8.1');
   api.imply('babrahams:transactions');
   api.addFiles('lib/undo_redo_client.css','client');
   api.addFiles('lib/undo_redo_client.html','client');
