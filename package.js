@@ -1,6 +1,6 @@
 Package.describe({
   name: 'babrahams:undo-redo',
-  version: '0.3.7',
+  version: '0.4.0',
   summary: 'Undo-redo widget for babrahams:transactions',
   git: 'https://github.com/JackAdams/meteor-undo-redo.git',
   documentation: 'README.md'
